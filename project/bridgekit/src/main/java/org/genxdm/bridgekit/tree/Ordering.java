@@ -64,9 +64,13 @@ public final class Ordering
             if (depthLhs == depthOfCommonAncestorOrSelf)
             {
                 if (depthRhs == depthOfCommonAncestorOrSelf)
-                    return EQUAL;
+                    {
+                        return EQUAL;
+                    }
                 else
-                    assert (depthRhs > depthOfCommonAncestorOrSelf);
+                    {
+                        assert (depthRhs > depthOfCommonAncestorOrSelf);
+                    }
                     return BEFORE;
             }
             else if (depthRhs == depthOfCommonAncestorOrSelf)

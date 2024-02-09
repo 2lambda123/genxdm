@@ -271,7 +271,9 @@ public class SequenceTracingFilter<A> implements SequenceFilter<A>
 	private static String formatValue(final String value)
 	{
 		if (value == null)
-			return null;
+			{
+			    return null;
+			}
         return '\'' + value + '\'';
 	}
 
